@@ -1,0 +1,14 @@
+.profilePics {
+width: 25%;
+height:25%;
+text-align: center;
+}
+
+.wrapper {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    margin: 10px;
+    width: 50%;
+    padding: 20px;
+}
