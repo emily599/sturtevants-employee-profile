@@ -48,10 +48,12 @@ $(document).ready(function () {
 
             var nameDiv = $("<div>");
             nameDiv.text(employees[i].name);
+            nameDiv.addClass("nameDiv");
             wrapper.append(nameDiv);
 
 
             var photoDiv = $("<img>");
+
             photoDiv.attr("src", employees[i].photo);
             photoDiv.addClass("profilePics");
             wrapper.append(photoDiv);
@@ -60,17 +62,25 @@ $(document).ready(function () {
 
             var departmentDiv = $("<div>");
             departmentDiv.text(employees[i].department);
+            departmentDiv.addClass("departmentDiv");
             wrapper.append(departmentDiv);
 
 
             var yearsDiv = $("<div>");
-            yearsDiv.text(employees[i].years);
+            yearsDiv.text("Years worked: " + employees[i].years);
+            yearsDiv.addClass("yearsDiv");
             wrapper.append(yearsDiv);
 
 
             var sportsDiv = $("<div>");
-            sportsDiv.text(employees[i].sports);
+            sportsDiv.text("Sports: " + employees[i].sports);
+            sportsDiv.addClass("sportsDiv");
             wrapper.append(sportsDiv);
+
+            var favoriteLocationDiv = $("<div>");
+            favoriteLocationDiv.text(employees[i].favoriteLocation);
+            favoriteLocationDiv.addClass("favoriteLocationDiv");
+            wrapper.append(favoriteLocationDiv);
 
             $("#page").append(wrapper);
 

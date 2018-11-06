@@ -1,14 +1,58 @@
 .profilePics {
-width: 25%;
-height:25%;
-text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100px;
+    height: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+    justify-content: flex-start;
+    overflow: hidden;
+
 }
 
 .wrapper {
-    border-style: solid;
-    border-color: black;
-    border-width: 5px;
+   
+    background: #E5E5E5;
     margin: 10px;
-    width: 50%;
+    width: 20%;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    
+}
+
+.nameDiv {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+
+
+}
+.departmentDiv {
+    display: flex;
+    flex-direction: column;
+    border-bottom-style: solid;
+    border-bottom-color: black; 
+    border-bottom-width: 1px;
+    font-style: bold;
+    font-size: 20px;
+   
+}
+.yearsDiv {
+    display: flex;
+    flex-direction: column;
+    
+}
+.sportsDiv {
+    display: flex;
+    flex-direction: column;
+    
+}
+.favoriteLocationDiv {
+    display: flex;
+    flex-direction: column;
+    
 }
